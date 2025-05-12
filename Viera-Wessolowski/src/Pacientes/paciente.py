@@ -1,8 +1,12 @@
-from datetime import datetime , date , time
+from abc import ABC, abstractmethod
+from datetime import date
 
-class paciente():
 
-    def __init__(self, nombre : str, DNI : int, fecha_nacimiento : datetime, sexo : str, telefono_contacto : int, tipo_sangre : str, centro_salud : any ):
+class paciente(ABC):
+
+    def _init_(self, nombre : str, DNI : int, fecha_nacimiento : date , sexo : str, telefono_contacto : int, tipo_sangre : str, centro_salud : any ):
+        
+        
         self.nombre = nombre
         
         self.DNI = DNI
@@ -17,4 +21,11 @@ class paciente():
 
         self.centro_salud = centro_salud
 
-        pass
+
+
+    def __str__(self) :
+
+        # Devuelve un string con los datos no completos del paciente
+
+
+        return f"Nombre: {self.nombre}, DNI: {self.DNI}, Fecha de nacimiento: {self.fecha_nacimiento} "
