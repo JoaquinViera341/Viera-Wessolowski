@@ -17,4 +17,24 @@ class centro_salud(vehiculos, cirujano):
 
         self.lista_vehiculos = lista_vehiculos
 
+        self.direccion = direccion
+
         pass
+
+    def agregar_cirujano(self, cirujano : cirujano):
+        self.lista_cirujanos.append(cirujano)
+        return self.lista_cirujanos
+    
+    def eliminar_cirujano (self, cirujano : cirujano):
+        self.lista_cirujanos.remove(cirujano)
+        return self.lista_cirujanos
+    
+    def agregar_vehiculo(self, vehiculo : vehiculos):
+        self.lista_vehiculos.append(vehiculo)
+        return self.lista_vehiculos
+    
+    def eliminar_vehiculo(self, vehiculo : vehiculos):
+        self.lista_vehiculos.remove(vehiculo)
+        return self.lista_vehiculos
+
+    def 
