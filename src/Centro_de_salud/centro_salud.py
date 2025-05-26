@@ -37,5 +37,5 @@ class centro_salud(vehiculos, cirujano):
         self.lista_vehiculos.remove(vehiculo)
         return self.lista_vehiculos
 
-    def guardar_centro_salud(self):
+        
         

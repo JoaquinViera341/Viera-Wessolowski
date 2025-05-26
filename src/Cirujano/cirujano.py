@@ -1,6 +1,9 @@
-class cirujano ():
+import random
 
-    def __init__(self, dni : int, especialidad : str, disponibilidad : bool):
+class cirujano () :
+
+
+    def __init__(self, dni : int, especialidad : str, disponibilidad : bool) :
         self.dni = dni
 
         self.especialidad = especialidad
@@ -8,3 +11,7 @@ class cirujano ():
         self.disponibilidad = disponibilidad
         
         pass
+
+
+
+    
